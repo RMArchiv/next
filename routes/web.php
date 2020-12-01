@@ -22,5 +22,5 @@ Route::get('/', function () {
 //     return view('dashboard');
 // })->name('dashboard');
 
-Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('index.index');
 Route::resource('news', \App\Http\Controllers\NewsController::class);
